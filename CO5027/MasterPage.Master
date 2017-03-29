@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="CO5027.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!-- Section for navigation bar-->
+        <div class = "navbar">
+                <nav>
+                    <ul>
+                        <li><a href ="~/default.aspx">Homepage</a></li>
+                        <li><a href ="Product.aspx">Product</a></li>
+                        <li><a href ="Product Detail.aspx">Product Detail</a></li>
+                        <li><a href = "Gallery.aspx">Gallery</a></li>
+                        <li><a href = "Contact.aspx">Contact</a></li>
+                        <li><a href = "Payment.aspx">Payment</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+        <div class = "content">
+
+
+
+
+
+
+
+        </div>
+
+        <div class = "footer">
+
+        </div>
+
+</body>
+</html>
