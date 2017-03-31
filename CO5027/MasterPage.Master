@@ -4,11 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Homepage</title>
+     
     <asp:ContentPlaceHolder ID="head" runat="server">
 
     </asp:ContentPlaceHolder>
-
+    <link href ="CSS/StyleSheet.css" rel = "stylesheet" type="text/css"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -17,12 +18,12 @@
         <div class = "navbar">
                 <nav>
                     <ul>
-                        <li><a href ="~/default.aspx">Homepage</a></li>
-                        <li><a href ="Product.aspx">Product</a></li>
-                        <li><a href ="Product Detail.aspx">Product Detail</a></li>
-                        <li><a href = "Gallery.aspx">Gallery</a></li>
-                        <li><a href = "Contact.aspx">Contact</a></li>
-                        <li><a href = "Payment.aspx">Payment</a></li>
+                        <li><a href ="~/default.aspx" runat ="server">Homepage</a></li>
+                        <li><a href ="Product.aspx" runat="server">Product</a></li>
+                        <li><a href ="Product Detail.aspx" runat="server">Product Detail</a></li>
+                        <li><a href = "Gallery.aspx" runat="server">Gallery</a></li>
+                        <li><a href = "Contact.aspx" runat="server">Contact</a></li>
+                        <li><a href = "Payment.aspx" runat="server">Payment</a></li>
                     </ul>
                 </nav>
             </div>
@@ -31,19 +32,18 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
+    <!-- Inside content -->
         <div class = "content">
 
 
-
-
-
-
-
         </div>
+    <!-- End content -->
 
+    <!-- Footer -->
         <div class = "footer">
 
         </div>
+    <!-- End footer -->
 
 </body>
 </html>

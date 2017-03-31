@@ -1,0 +1,35 @@
+﻿html, body
+{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100%;
+    position: center;
+}
+
+.navbar
+{
+    background-color: white;
+    display: inline-block;
+    position: center;
+}
+
+.navbar nav ul
+{
+    position: center;
+    margin: initial;
+    padding: inherit;
+}
+/*---- formating underline text on navigation bar text-----*/
+
+.navbar nav ul li a
+{
+    text-decoration: none;
+}
+
+/*------- end of text decoration ---------------------------*/
+.content
+{
+
+}
