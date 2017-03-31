@@ -11,8 +11,6 @@
 .navbar
 {
     background-color: white;
-    display: inline-block;
-    position: center;
 }
 
 .navbar nav ul
@@ -23,7 +21,7 @@
 }
 /*---- formating underline text on navigation bar text-----*/
 
-.navbar nav ul li a
+.navbar nav ul > li > a
 {
     text-decoration: none;
 }
@@ -31,5 +29,25 @@
 /*------- end of text decoration ---------------------------*/
 .content
 {
+    padding: 2px 5px 5px 5px;
+    margin: 1px 0px 0px 0px;
+    width: auto;
+    height: 100em;
+    position: center;
 
 }
+
+.image 
+{
+    position: center;
+    float: left;
+}
+
+.footer
+{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    position: center;
+}
+
