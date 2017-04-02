@@ -11,7 +11,7 @@ namespace CO5027
 {
 
 
-    public partial class _default
+    public partial class Default
     {
     }
 }
