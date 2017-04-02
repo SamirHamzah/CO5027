@@ -5,11 +5,11 @@
     <asp:Panel ID="Panel1" runat="server">
     </asp:Panel>
 
-    <div class = "image">
-        <p>
-            <asp:Image ID="Image1" runat="server" Height="514px" style="margin-top: 0px" />
-            <asp:Image ID="Image2" runat="server" Width="450px" />
-        </p>
+    <!---- JQuery slideshow content . Code reference: http://responsiveslides.com/ -->
 
-    </div>
+    <ul class = "rslides">
+        <li><img src = "Images/Microsoft Surface DETAILS.jpg" /></li>
+        <li><img src = "Images/Surface 2012.jpg" /></li>
+        <li><img src = "Images/Surface book 2016.jpg"</li>
+    </ul>
 </asp:Content>

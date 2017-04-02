@@ -1,53 +1,178 @@
 ﻿html, body
 {
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    margin: 0;
+    padding: inherit;
     background-color: white;
     background-repeat: no-repeat;
     background-position:center;
     background-size: 100%;
-    position: center;
+    border: 0;
+}
+
+.header
+{
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+    background-color: black; /*-- header with text as logo --*/
+    position: fixed;
+    
+}
+
+.header h1
+{
+    font-family: 'Old English Text MT';
+    font-weight: lighter;
+    font-size: 2.4em;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2)
 }
 
 .navbar
 {
-    background-color: white;
+    width: 100%;
+    height: 70px;
+    background-color: aquamarine;
+    color: white;
 }
 
-.navbar nav ul
+.navbar nav
 {
-    position: center;
-    margin: initial;
-    padding: inherit;
+    display: inline-block;
 }
+
+.navbar ul li
+{
+    float: left;
+}
+
+.navbar ul
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+}
+
+.navbar nav ul li a
+{
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: red;
+    display: inline-block;
+}
+
+
 /*---- formating underline text on navigation bar text-----*/
 
-.navbar nav ul > li > a
+/*-------  banner for Quotes and images of tablets --------------*/
+
+.banner
 {
-    text-decoration: none;
+    top: 100px;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-image: url(../Images/tablets-wallpaper.jpg)
 }
 
+.banner h2
+{
+    font-family: Arial;
+    font-size: medium;
+    text-align: left;
+    vertical-align: text-bottom;
+    color: white;
+}
 /*------- end of text decoration ---------------------------*/
 .content
 {
-    padding: 2px 5px 5px 5px;
-    margin: 1px 0px 0px 0px;
-    width: auto;
-    height: 100em;
-    position: center;
-
+    
+    height: 700px;
+    width: 100%;
+    background: transparent;
+    position: relative;
 }
 
+
+
+.footer
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    z-index: auto;
+    margin: auto;
+    border: none;
+    padding: 10px 10px 30px 10px;
+    width: auto;
+    height: auto;
+    background-color: black;
+}
+
+.footer .validation-link
+{
+    float: right;
+}
+
+.validation-link > a
+{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.contact-content
+{
+    top: 400px;
+    height: 800px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: center;
+}
+
+/*------------------------- Gallery page images  ------------------*/
 .image 
 {
     position: center;
     float: left;
 }
 
-.footer
-{
-    width: 100%;
-    height: auto;
-    background-color: black;
-    position: center;
-}
+/*------- rslides Code Reference : http://responsiveslides.com/ ----------*/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
 
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }

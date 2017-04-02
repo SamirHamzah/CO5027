@@ -2,7 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div _designerregion="0">
+        
+    <div class = "contact-content">
+        <form>
+            <fieldset>
+                <legend>Form</legend>
             <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
             <asp:TextBox ID="txtName" runat="server" style="margin-left: 210px" Width="978px"></asp:TextBox>
             <br />
@@ -15,6 +19,9 @@
             <asp:TextBox ID="txtName3" runat="server" style="margin-left: 182px" Width="974px"></asp:TextBox>
             <br />
             <br />
-        </div>
+
+            </fieldset>
+        </form>
+    </div>
         </asp:Content>
 

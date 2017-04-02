@@ -68,6 +68,13 @@
   <ItemGroup>
     <Content Include="Contact.aspx" />
     <Content Include="gallery.aspx" />
+    <Content Include="Images\Microsoft Surface DETAILS.jpg" />
+    <Content Include="Images\Surface 2012.jpg" />
+    <Content Include="Images\Surface book 2016.jpg" />
+    <Content Include="Images\tablets-wallpaper.jpg" />
+    <Content Include="Images\xperia z tablet.jpg" />
+    <Content Include="Images\xperia z2 tablet.jpg" />
+    <Content Include="Images\xperia z3 tablet.jpg" />
     <Content Include="packages.config" />
     <Content Include="MasterPage.Master" />
     <None Include="Web.Debug.config">
@@ -83,6 +90,7 @@
     <Content Include="CSS\StyleSheet.css" />
     <Content Include="payment.aspx" />
     <Content Include="Product.aspx" />
+    <Content Include="register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +140,13 @@
       <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
