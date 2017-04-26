@@ -5,37 +5,57 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="headContentPlaceholder" runat="server">
     
     </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
+<asp:Content ID="InsideContentValue" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
     
 
 
+    <!-- Google Map Javascirpt API -->
+    <!--  This script adpated from https://developers.google.com/maps/documentation/javascript/adding-a-google-map?refresh=1 -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfplIWrVj27rtqsZ6oicpW7ZbAj9BX3Nw&callback=initMap" async="" defer="defer" type="text/javascript">
+    </script>
 
-   <div class = "contact-map">
-       
-           <div class = "map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15901.207929470644!2d114.93382995!3d4.889015!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbn!4v1491284731394" 
-                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
-                </iframe>
+   <div class = "contact_form-map">      
+           <div id = "map">
+               <h1>Map</h1>
+                <script>
+                    function initMap(){
+                        var uluru = { lat: -53.274189, lng: -2.826945 }; //marker latitude and longitude of Thorton Science Park
+                        var map = new google.maps.Map(document.getElementById('map'),
+                            {
+                                zoom: 8,
+                                center: uluru
+                            });
+                        var marker = new google.maps.marker({
+                            position: uluru,
+                            map: map
+                        });
+                    }
+                </script>
            </div>
+       
            <div class = "contact-form">
+               <!-- Label and textbox for Name-->
                <asp:Label ID="NameLbl" runat="server" Text="Name"></asp:Label>
                <asp:TextBox ID="NameTxtBox" runat="server" Width="600px"></asp:TextBox>
                     <br />
-               <asp:Label ID="EmailLbl" runat="server" Text="E-Mail"></asp:Label>
-               <asp:TextBox ID="EmailTxtBox" runat="server" Width="600px"></asp:TextBox>   
-               <asp:Label ID="Label1" runat="server" Text="Address"></asp:Label>
-               <asp:TextBox ID="TextBox1" runat="server" Width="600px"></asp:TextBox>
-               <asp:Label ID="Label2" runat="server" Text="Subject"></asp:Label>
-               <asp:TextBox ID="TextBox2" runat="server" Width="600px"></asp:TextBox>
-               <asp:Label ID="Label3" runat="server" Text="Message"></asp:Label>
+               <!-- Label and textbox for Email -->
+               <asp:Label ID="EmailLbl" runat="server" Text="E-Mail" AssociatedControlID="EmailTxtBox"></asp:Label>
+               <asp:TextBox ID="EmailTxtBox" runat="server" Width="600px"></asp:TextBox>
+               
+               <!-- Label and textbox for Subject -->
+               <asp:Label ID="SubjectLbl" runat="server" Text="Subject" AssociatedControlID="SubjectTxtBox"></asp:Label>
+               <asp:TextBox ID="SubjectTxtBox" runat="server" Width="600px"></asp:TextBox>
+               <!-- Label and textbox for Message -->
+               <asp:Label ID="MessageLbl" runat="server" Text="Message" AssociatedControlID="MessageTxtbox"></asp:Label>
                <br />
-               <asp:TextBox ID="TextBox3" runat="server" Height="64px" Width="604px"></asp:TextBox>
+               <asp:TextBox ID="MessageTxtbox" runat="server" Height="64px" Width="604px"></asp:TextBox>
                <br />
-               <asp:Button ID="Button1" runat="server" Text="Submitt" />
+               <asp:Button ID="btnSubmitEmail" runat="server" Text="Submit" OnClick="btnSubmitEmail_Click" />
+               <asp:Literal ID="LiteralResult" runat="server"></asp:Literal>
                <br />
             </div>
        </div>
    
     
-   
+    
     </asp:Content>

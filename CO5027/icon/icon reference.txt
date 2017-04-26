@@ -1,4 +1,5 @@
 Reference
 
-search icon: https://pixabay.com/en/material-icon-search-icon-search-2155442/
+
 cart icon: https://pixabay.com/en/cart-ecommerce-online-buy-internet-1956097/
+search icon: http://www.flaticon.com/free-icon/research_164995#term=magnifying%20glass&page=1&position=36
